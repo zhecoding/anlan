@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Video Bootstrap | Youtube Capable Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/video.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Video Bootstrap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#demo">Demo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!--Header with Video Section-->
+    <header class="intro container video-section text-center full-screen hidden-xs" id="topVideo">
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=9D05ej8u-gU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1, startAt: 0, stopAt: 196}"></a>
+        <h1 class="brand-heading bottom">Video Bootstrap</h1>
+        <a href="#about" class="btn-circle page-scroll very-bottom">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+    </header>
+    
+    
+    <!--Header without Video Section for Small Devices-->
+    <header class="intro visible-xs container text-center full-screen" id="top">
+            <h1 class="brand-heading bottom">Video Bootstrap</h1>
+            <a href="#about" class="btn-circle page-scroll very-bottom">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+    </header>
+    
+    
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center full-screen">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Video Bootstrap</h2>
+                <p>Video Bootstrap is a free Bootstrap 3 theme created by Luke Schlangen and based on the <a href="http://startbootstrap.com/template-overviews/Video Bootstrap/">Grayscale Theme</a> from <a href="http://startbootstrap.com/">Start Bootstrap</a> and the <a href="https://github.com/pupunzi/jquery.mb.YTPlayer">youtube player</a> from <a href="https://github.com/pupunzi">pupunzi</a>. 
+                This theme features video from <a href="https://www.youtube.com/channel/UCW1Ttm2RmpaOlU1Ly086uJg">Max Schlickenmeyer</a> along with <a href="https://unsplash.imgix.net/photo-1416512107527-34cebecbac33?q=75&fm=jpg&s=58eff2b3daa3b797fb23fcd511d843ca">this picture</a> from Casey Fyfe from <a href="https://unsplash.com/">unsplash.com</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>Video Bootstrap includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization and can be downloaded <a  class="page-scroll" href="#download">below</a>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Demo Section-->
+    <section id="demo" class="container content-section text-center full-screen">
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+              <h2>Video Bootstrap Feature Demo</h2>
+              <p>This theme allows you to use bootstrap modals for displaying youtube videos, and unlike default bootstrap, will stop the youtube video when the modal is closed. These videos can be triggered the same way as a bootstrap modal. Here are a few examples of what it might look like.</p>
+          </div>
+      </div>
+      
+      <!-- Button trigger modal -->
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="//www.youtube.com/embed/2D2-o-KK02Y?autoplay=1&rel=0">
+          <i class="fa fa-play">
+          </i>
+          Watch the video
+        </button>
+      </div>
+      
+      <!-- Button trigger modal -->
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="//www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
+          <i class="fa fa-play">
+          </i>
+          Watch the video
+        </button>
+      </div>
+      
+    </section>
+    
+    <!-- Youtube Modal Where Everything is Displayed -->
+    <div class="modal fade" id="youtubeVideoModal" tabindex="-1" role="dialog"
+    aria-labelledby="youtubeVideoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <!--<div class="youtube-modal">-->
+          <iframe id="youtubeIframe" frameborder="0" allowfullscreen>
+          </iframe>
+        <!--</div>-->
+      </div>
+    </div>
+    
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center full-screen">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Video Bootstrap</h2>
+                    <p>You can download Video Bootstrap for free right here.</p>
+                      <ul class="list-inline preview-links">
+                				<li><a href="https://github.com/IronSummitMedia/startbootstrap-Video Bootstrap/archive/v1.0.1.zip" class="btn btn-default btn-lg"><i class="fa fa-download"></i> Download</a></li>
+                				<li><a href="https://github.com/IronSummitMedia/startbootstrap-Video Bootstrap" class="btn btn-default btn-lg"><i class="fa fa-github"></i> On GitHub</a></li>
+                			</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center full-screen">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Luke</h2>
+                <p>Feel free to email us to provide some feedback on this template. If you're really impressed by what you see, to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/videobootstrap.js"></script>
+    
+    <!-- Youtube Video Player JavaScript -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+
+</body>
+
+</html>
