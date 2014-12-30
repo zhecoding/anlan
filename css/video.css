@@ -1,12 +1,9 @@
 /*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Luke Schlangen - Video Bootstrap Theme
  */
 
 body {
     overflow-x: hidden;
-    /*font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family: 'Berkshire+Swash';
     color: #000;
     background-color: #fff;
@@ -26,9 +23,6 @@ h3,
 h4,
 h5,
 h6 {
-    /*margin: 0 0 35px;*/
-
-    /*font-family: Lucinda;*/
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -104,7 +98,7 @@ table {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: rgba(0,0,0,.15);
 }
 
@@ -114,9 +108,9 @@ table {
     transition: background .3s ease-in-out;
 }
 
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a.active {
+.nav li a:hover,
+.nav li a:focus,
+.nav li a:active {
     outline: 0;
     background-color: rgba(0,0,0,.2);
 }
@@ -156,7 +150,6 @@ table {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-image: url("/img/Background.jpg");
     background-position: center;
     background-color: #000;
     -webkit-background-size: cover;
@@ -477,26 +470,6 @@ footer p {
     margin: 0;
 }
 
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
-}
-
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
@@ -511,10 +484,12 @@ footer {
     -o-background-size: cover;
 }
 
+.video-section{
+    height: 100vh;
+}
 
 .video-section .buttonBar{
     display:none;
-    
 }
 
 .full-screen{
