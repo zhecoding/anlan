@@ -101,25 +101,65 @@
             </div>
     </section>
 
-    <!-- Demo Section-->
-    <section class="container content-section text-center full-screen" id="demo">
-        <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
-            <h2>Demo</h2>
-            <p>This theme allows you to use bootstrap modals for displaying youtube videos, and unlike default bootstrap, will stop the youtube video when the modal is closed. These videos can be triggered the same way as a bootstrap modal. Here are a few
-                examples of what it might look like.</p>
-
-            <!-- Button trigger modal -->
-            <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="//www.youtube.com/embed/2D2-o-KK02Y?autoplay=1&rel=0">
-                <i class="fa fa-play">
-                  </i> Watch a Video
-            </button>
-
-            <!-- Button trigger modal -->
-            <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="//www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
-                <i class="fa fa-play">
-                  </i> Watch Another Video
-            </button>
+<!-- Demo Section-->
+  <section class="container content-section text-center full-screen" id="demo">
+    <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
+      <h2>
+        Demo
+      </h2>
+      <p>
+        This theme allows you to use bootstrap modals for displaying youtube videos, and unlike default bootstrap, will stop the youtube video when the modal is closed. These videos can be triggered the same way as a bootstrap modal. Here are a few
+        examples of what it might look like.
+      </p>
+      
+      <p>
+        Using Buttons
+      </p>
+      <p>
+        <!-- Button trigger modal -->
+        <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/2D2-o-KK02Y?autoplay=1&rel=0">
+          <i class="fa fa-play">
+          </i>
+          Watch a Video
+        </button>
+        
+        <!-- Button trigger modal -->
+        <button class="btn btn-default btn-lg youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
+          <i class="fa fa-play">
+          </i>
+          Watch Another Video
+        </button>
+      </p>
+    </br>
+    <p>
+      Using Images
+    </p>
+    <p>
+      <!-- Image trigger modal with no border -->
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 image-link">
+          <button class="youtube-trigger" data-toggle="modal" data-target="#youtubeVideoModal" value="https://www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
+            <div class="carousel-caption">
+              <h3>
+                No Border
+              </h3>
+            </div>
+            <img src="img/Background.jpg" class="img-responsive" alt="" />
+          </button>
         </div>
+        <!-- Image trigger modal with border and text -->
+        <div class="col-sm-6 col-xs-12 image-link">
+          <a class="youtube-trigger" href="#youtubeVideoModal" data-toggle="modal" value="https://www.youtube.com/embed/9D05ej8u-gU?autoplay=1&rel=0">
+            <div class="carousel-caption">
+              <h3>
+                Border and Text
+              </h3>
+            </div>
+            <img src="img/Background.jpg" class="img-responsive" alt="" />
+          </a>
+        </div>
+    </div>
+  </p>
 
 
         <!-- Youtube Modal Where Everything is Displayed -->
