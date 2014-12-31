@@ -16,12 +16,18 @@ $('body').scrollspy({
 
 //youtube player functionality
 $('.youtube-trigger').click(function() {
-    var src = this.value;
+    if(this.value !== null && this.value !== undefined){
+        startVideo(this.value);
+    } else {
+        startVideo("https://www.youtube.com/embed/56_S0WeTkzs?autoplay=1&rel=0")
+    }
+});
+
+function startVideo(src) {
     $('#youtubeVideoModal').modal('show');
     $('#youtubeVideoModal iframe').attr('src', src);
-
     resizeYoutubeVideo();
-});
+}
 
 $('#youtubeVideoModal').on('hidden.bs.modal', function() {
     $('#youtubeVideoModal iframe').removeAttr('src');
@@ -62,10 +68,10 @@ $(document).ready(function () {
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top < 50) {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    } else {
+    if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");  
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
 
